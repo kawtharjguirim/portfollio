@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kawthar Jguirim — Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="sidebar">
+  <div class="sidebar__brand">Kawthar Jguirim</div>
+  <div class="sidebar__role">IA &amp; DATA SCIENCE</div>
+
+  <div class="sidebar__nav">
+    <a href="#home" class="sidebar__link active" data-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="#about" class="sidebar__link" data-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+      <span>About</span>
+    </a>
+    <a href="#resume" class="sidebar__link" data-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
+      <span>Resume</span>
+    </a>
+    <a href="#portfolio" class="sidebar__link" data-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+      <span>Portfolio</span>
+    </a>
+    <a href="#competences" class="sidebar__link" data-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+      <span>Compétences</span>
+    </a>
+    <a href="#contact" class="sidebar__link" data-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+      <span>Contact</span>
+    </a>
+  </div>
+
+  <div class="sidebar__footer">
+    <a href="https://github.com/kawtharjguirim" target="_blank" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/kawthar-jguirim-585355347" target="_blank" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48Z"/></svg>
+    </a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ================= HOME ================= -->
+  <section id="home">
+    <div class="hero__text">
+      <div class="hero__eyebrow">Bienvenue, je suis</div>
+      <h1 class="hero__name">Kawthar Jguirim</h1>
+      <p class="hero__role">
+        Ingénieure <span class="typewriter" id="typewriter"></span><span class="typewriter-cursor">|</span>
+      </p>
+      <div class="hero__cta">
+        <a href="#portfolio" class="btn btn--primary">
+          Voir mon Portfolio
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="CV_Kawthar_LaTeX.pdf" class="btn btn--ghost" download>
+          Télécharger mon CV
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__portrait-wrap" id="portraitWrap">
+
+      <!-- Constellation orbitale — logos officiels -->
+      <div class="orbit" id="orbitOuter">
+        <div class="orbit__node" style="--angle: 0deg;" data-name="Python">
+          <span class="orbit__logo"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy"></span>
+        </div>
+        <div class="orbit__node" style="--angle: 45deg;" data-name="PyTorch">
+          <span class="orbit__logo"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" loading="lazy"></span>
+        </div>
+        <div class="orbit__node" style="--angle: 90deg;" data-name="Hugging Face">
+          <span class="orbit__logo"><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face" loading="lazy"></span>
+        </div>
+        <div class="orbit__node" style="--angle: 135deg;" data-name="FastAPI">
+          <span class="orbit__logo"><img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" loading="lazy"></span>
+        </div>
+        <div class="orbit__node" style="--angle: 180deg;" data-name="Next.js">
+          <span class="orbit__logo"><img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" loading="lazy"></span>
+        </div>
+        <div class="orbit__node" style="--angle: 225deg;" data-name="TensorFlow">
+          <span class="orbit__logo"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" loading="lazy"></span>
+        </div>
+        <div class="orbit__node" style="--angle: 270deg;" data-name="Docker">
+          <span class="orbit__logo"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" loading="lazy"></span>
+        </div>
+        <div class="orbit__node" style="--angle: 315deg;" data-name="LangChain">
+          <span class="orbit__logo"><img src="https://cdn.simpleicons.org/langchain/1C3C3C" alt="LangChain" loading="lazy"></span>
+        </div>
+      </div>
+
+      <svg class="orbit__lines" viewBox="0 0 640 640">
+        <circle id="orbitDrawCircle" cx="320" cy="320" r="270" fill="none" stroke="url(#orbitGrad)" stroke-width="1.2" stroke-dasharray="2 9" opacity="0.6"/>
+        <defs>
+          <linearGradient id="orbitGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#c6376f"/>
+            <stop offset="50%" stop-color="#caa15d"/>
+            <stop offset="100%" stop-color="#b76e79"/>
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="hero__ring" id="heroRing"></div>
+      <div class="hero__portrait" id="portraitTilt">
+        <img src="assets/kawthar.jpg" alt="Kawthar Jguirim">
+      </div>
+      <div class="hero__sparkle hero__sparkle--1">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+      </div>
+      <div class="hero__sparkle hero__sparkle--2">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+      </div>
+      <div class="hero__sparkle hero__sparkle--3">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="about-me__deco">
+      <span class="about-me__sparkle about-me__sparkle--1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg></span>
+      <span class="about-me__sparkle about-me__sparkle--2"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg></span>
+    </div>
+
+    <div class="about-me__title">About Me</div>
+    <div class="about-me__underline"></div>
+
+    <svg class="about-me__signature" viewBox="0 0 260 60" fill="none">
+      <path d="M8 40 Q 22 8, 40 34 Q 52 52, 64 24 Q 74 4, 86 30 Q 96 48, 110 22 Q 122 2, 136 28 T 178 26 Q 196 12, 214 30 Q 228 44, 250 20"
+            stroke="url(#sigGrad)" stroke-width="3" stroke-linecap="round"/>
+      <defs>
+        <linearGradient id="sigGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#c6376f"/>
+          <stop offset="50%" stop-color="#caa15d"/>
+          <stop offset="100%" stop-color="#b76e79"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <p class="about-me__tagline">
+      🚀 Portée par la curiosité, la rigueur technique et une vraie sensibilité créative. Construisons l'avenir ensemble !
+    </p>
+
+    <div class="about-me__card" id="aboutCard">
+      <div class="about-me__facts">
+        <div class="about-me__fact">
+          <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <strong>Âge :</strong> <span>23 ans</span>
+        </div>
+        <div class="about-me__fact">
+          <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg></span>
+          <strong>Diplôme :</strong> <span>Génie Informatique — IA &amp; Data Science</span>
+        </div>
+        <div class="about-me__fact">
+          <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2Z"/></svg></span>
+          <strong>Téléphone :</strong> <span>+216 95 552 229</span>
+        </div>
+        <div class="about-me__fact">
+          <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg></span>
+          <strong>Email :</strong> <span>Kawther.JGUIRIM@esprim.tn</span>
+        </div>
+        <div class="about-me__fact">
+          <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6-9.3-10A5.5 5.5 0 0 1 12 5a5.5 5.5 0 0 1 9.3 6C19 15 12 21 12 21Z"/><circle cx="12" cy="10.5" r="2"/></svg></span>
+          <strong>Ville :</strong> <span>Sayada, Monastir, Tunisie</span>
+        </div>
+      </div>
+
+      <div class="about-me__bio">
+        🚀 Étudiante ingénieure passionnée par l'IA et le Data Science, avec une approche de bout en bout :
+        du modèle de deep learning à la plateforme SaaS déployée en production. Expérience concrète en
+        RAG multimodal, deep learning médical et architectures full-stack. Ouverte aux stages PFE et aux
+        collaborations sur des projets à fort impact.
+      </div>
+
+      <div class="about-me__socials">
+        <a href="https://linkedin.com/in/kawthar-jguirim-585355347" target="_blank" class="about-me__social about-me__social--linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48Z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/kawtharjguirim" target="_blank" class="about-me__social about-me__social--github">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+          GitHub
+        </a>
+        <a href="https://x.com/kawthar_Jguirim" target="_blank" class="about-me__social about-me__social--twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.3 22H1.2l8.1-9.3L1 2h7.3l5 6.6L18.9 2Zm-1.2 18h1.9L7.4 4H5.4l12.3 16Z"/></svg>
+          X
+        </a>
+      </div>
+    </div>
+
+    <div class="skills-section" id="aboutSkills">
+      <div class="skills-section__title">Skills</div>
+      <div class="skills-section__underline"></div>
+
+      <div class="skills-blocks">
+        <div class="skills-block skills-block--1">
+          <div class="skills-block__header">
+            <span class="skills-block__dot"></span>
+            <h3 class="skills-block__title">Langages &amp; Frameworks Web</h3>
+          </div>
+          <div class="skills-block__grid">
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" loading="lazy"></div><div class="skill-icon-card__label">HTML</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS" loading="lazy"></div><div class="skill-icon-card__label">CSS</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" loading="lazy"></div><div class="skill-icon-card__label">PHP</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/symfony/000000" alt="Symfony" loading="lazy"></div><div class="skill-icon-card__label">Symfony</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/springboot/6DB33F" alt="Spring Boot" loading="lazy"></div><div class="skill-icon-card__label">Spring Boot</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" loading="lazy"></div><div class="skill-icon-card__label">React</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" loading="lazy"></div><div class="skill-icon-card__label">Next.js</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" loading="lazy"></div><div class="skill-icon-card__label">FastAPI</div></div>
+          </div>
+        </div>
+
+        <div class="skills-block skills-block--2">
+          <div class="skills-block__header">
+            <span class="skills-block__dot"></span>
+            <h3 class="skills-block__title">Bases de données &amp; Vector Stores</h3>
+          </div>
+          <div class="skills-block__grid">
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" loading="lazy"></div><div class="skill-icon-card__label">MySQL</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" loading="lazy"></div><div class="skill-icon-card__label">PostgreSQL</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" loading="lazy"></div><div class="skill-icon-card__label">MongoDB</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/chromadb/121212" alt="ChromaDB" loading="lazy"></div><div class="skill-icon-card__label">ChromaDB</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/faiss/c6376f" alt="FAISS" loading="lazy"></div><div class="skill-icon-card__label">FAISS</div></div>
+          </div>
+        </div>
+
+        <div class="skills-block skills-block--3">
+          <div class="skills-block__header">
+            <span class="skills-block__dot"></span>
+            <h3 class="skills-block__title">IA &amp; Deep Learning</h3>
+          </div>
+          <div class="skills-block__grid">
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy"></div><div class="skill-icon-card__label">Python</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" loading="lazy"></div><div class="skill-icon-card__label">PyTorch</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" loading="lazy"></div><div class="skill-icon-card__label">TensorFlow</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face" loading="lazy"></div><div class="skill-icon-card__label">Hugging Face</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/langchain/1C3C3C" alt="LangChain" loading="lazy"></div><div class="skill-icon-card__label">LangChain</div></div>
+            <div class="skill-icon-card">
+              <div class="skill-icon-card__logo">
+                <span class="skill-icon-fallback" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+                </span>
+              </div>
+              <div class="skill-icon-card__label">Fine-tuning</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-block skills-block--4">
+          <div class="skills-block__header">
+            <span class="skills-block__dot"></span>
+            <h3 class="skills-block__title">Data Science &amp; Notebooks</h3>
+          </div>
+          <div class="skills-block__grid">
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter" loading="lazy"></div><div class="skill-icon-card__label">Jupyter</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/googlecolab/F9AB00" alt="Google Colab" loading="lazy"></div><div class="skill-icon-card__label">Colab</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/pytest/0A9EDC" alt="Pytest" loading="lazy"></div><div class="skill-icon-card__label">Pytest</div></div>
+          </div>
+        </div>
+
+        <div class="skills-block skills-block--5">
+          <div class="skills-block__header">
+            <span class="skills-block__dot"></span>
+            <h3 class="skills-block__title">Big Data &amp; Streaming</h3>
+          </div>
+          <div class="skills-block__grid">
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/apachespark/E25A1C" alt="Spark" loading="lazy"></div><div class="skill-icon-card__label">Spark</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/apachespark/E25A1C" alt="PySpark" loading="lazy"></div><div class="skill-icon-card__label">PySpark</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/apachekafka/231F20" alt="Kafka" loading="lazy"></div><div class="skill-icon-card__label">Kafka</div></div>
+          </div>
+        </div>
+
+        <div class="skills-block skills-block--6">
+          <div class="skills-block__header">
+            <span class="skills-block__dot"></span>
+            <h3 class="skills-block__title">MLOps &amp; Cloud</h3>
+          </div>
+          <div class="skills-block__grid">
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" loading="lazy"></div><div class="skill-icon-card__label">Docker</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git" loading="lazy"></div><div class="skill-icon-card__label">Git</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="Vertex AI" loading="lazy"></div><div class="skill-icon-card__label">Vertex AI</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/microsoftazure/0078D4" alt="Azure ML" loading="lazy"></div><div class="skill-icon-card__label">Azure ML</div></div>
+            <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/stripe/635BFF" alt="Stripe" loading="lazy"></div><div class="skill-icon-card__label">Stripe</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESUME ================= -->
+  <section id="resume">
+    <div class="section__eyebrow">// CV</div>
+    <h2 class="section__title">Resume</h2>
+
+    <div class="resume__card">
+      <div>
+        <h3 style="font-family:var(--font-display); font-size:1.15rem;">CV complet — PDF</h3>
+        <p>Formation, expérience professionnelle, 8 projets détaillés, compétences techniques et certifications.</p>
+      </div>
+      <a href="CV_Kawthar_LaTeX.pdf" class="btn btn--primary" download>
+        Télécharger le CV
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"/></svg>
+      </a>
+    </div>
+
+    <div class="resume-timelines" id="resumeTimelines">
+      <div class="resume-col">
+        <div class="resume-col__header">
+          <span class="resume-col__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+          </span>
+          Formation
+        </div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__card">
+              <div class="timeline__date">Depuis septembre 2025</div>
+              <div class="timeline__title">Cycle Ingénieur en Informatique (2ᵉ année)</div>
+              <div class="timeline__place">ESPRIM, Monastir</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__card">
+              <div class="timeline__date">2022 – 2023</div>
+              <div class="timeline__title">Cycle préparatoire classique</div>
+              <div class="timeline__place">ESPRIM, Monastir</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__card">
+              <div class="timeline__date">2021 – 2022</div>
+              <div class="timeline__title">Baccalauréat Mathématiques</div>
+              <div class="timeline__place">Lycée Sayada, Monastir</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-col">
+        <div class="resume-col__header">
+          <span class="resume-col__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </span>
+          Expérience professionnelle
+        </div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__card">
+              <div class="timeline__date">Juin – Août 2026</div>
+              <div class="timeline__title">Stagiaire Ingénieure IA — Memo (Second Brain SaaS)</div>
+              <div class="timeline__place">QInsights BV (stage à distance)</div>
+              <p class="timeline__desc">Plateforme SaaS de gestion de connaissances avec pipeline RAG multimodal, connecteurs tiers, transcription vocale temps réel et facturation Stripe.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__dot"></span>
+            <div class="timeline__card">
+              <div class="timeline__date">Juin – Juillet 2025</div>
+              <div class="timeline__title">Développeuse Full-Stack — Lettro Game</div>
+              <div class="timeline__place">InternTechLabs — Summer Intern Program</div>
+              <p class="timeline__desc">Jeu de mots multijoueur en temps réel : backend Node.js/Express/WebSockets, frontend Next.js/TypeScript, persistance PostgreSQL, conteneurisation Docker.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section id="portfolio">
+    <div class="section__eyebrow">// PROJETS</div>
+    <h2 class="section__title">Portfolio</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-card__title">NEURO PREDICT</div>
+        <div class="project-card__desc">Détection et prédiction de lésions de sclérose en plaques par IRM (91,52 % accuracy, ResNet-50).</div>
+        <div class="project-card__tags"><span class="tag">ResNet-50</span><span class="tag">U-Net</span><span class="tag">TensorFlow</span></div>
+        <div class="project-card__links">
+          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">TumorNet</div>
+        <div class="project-card__desc">Classification de tumeurs en 5 stades avec explicabilité Grad-CAM et détection d'anomalies.</div>
+        <div class="project-card__tags"><span class="tag">EfficientNetB0</span><span class="tag">Focal Loss</span><span class="tag">Streamlit</span></div>
+        <div class="project-card__links">
+          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">Forge AI</div>
+        <div class="project-card__desc">Plateforme SaaS de préparation aux entretiens : CV analyzer, entretiens IA adaptatifs, architecture multi-agent.</div>
+        <div class="project-card__tags"><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">Celery</span></div>
+        <div class="project-card__links">
+          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">WriteMind AI</div>
+        <div class="project-card__desc">Espace de travail IA unifié : éditeur, humanizer, détecteur de contenu généré, RAG, AI Studio multi-agents.</div>
+        <div class="project-card__tags"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">Groq</span></div>
+        <div class="project-card__links">
+          <a href="https://github.com/kawtharjguirim/WriteMind" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">VoxIA</div>
+        <div class="project-card__desc">Assistant vocal conversationnel temps réel — pipeline STT → LLM → TTS via LiveKit Agents.</div>
+        <div class="project-card__tags"><span class="tag">LiveKit</span><span class="tag">Python</span><span class="tag">WebRTC</span></div>
+        <div class="project-card__links">
+          <a href="https://github.com/kawtharjguirim/VoxIA" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">Memo</div>
+        <div class="project-card__desc">Second Brain SaaS avec RAG multimodal, connecteurs tiers et transcription vocale temps réel (stage QInsights BV).</div>
+        <div class="project-card__tags"><span class="tag">Next.js</span><span class="tag">ChromaDB</span><span class="tag">Stripe</span></div>
+        <div class="project-card__links">
+          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">StudyMate AI</div>
+        <div class="project-card__desc">Assistant académique full-stack : résumé automatique de PDF et Audio Studio pour podcasts.</div>
+        <div class="project-card__tags"><span class="tag">Next.js 14</span><span class="tag">Groq LLaMA 3.1</span></div>
+        <div class="project-card__links">
+          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-card__title">Lettro Game</div>
+        <div class="project-card__desc">Jeu de mots multijoueur en temps réel, synchronisation WebSockets (programme InternTechLabs).</div>
+        <div class="project-card__tags"><span class="tag">Node.js</span><span class="tag">WebSockets</span><span class="tag">PostgreSQL</span></div>
+        <div class="project-card__links">
+          <a href="https://github.com/kawtharjguirim/lettro-game" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= COMPÉTENCES ================= -->
+  <section id="competences">
+    <div class="section__eyebrow">// EXPERTISE</div>
+    <h2 class="section__title">Compétences</h2>
+
+    <div class="skills-grid">
+      <div class="skill-block">
+        <div class="skill-block__title">IA / Deep Learning</div>
+        <div class="skill-block__list">
+          <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">CNN</span>
+          <span class="tag">U-Net</span><span class="tag">ResNet</span><span class="tag">EfficientNet</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block__title">NLP &amp; RAG</div>
+        <div class="skill-block__list">
+          <span class="tag">LangChain</span><span class="tag">ChromaDB</span><span class="tag">FAISS</span>
+          <span class="tag">RAGAS</span><span class="tag">Groq</span><span class="tag">Gemini</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block__title">Full-Stack &amp; SaaS</div>
+        <div class="skill-block__list">
+          <span class="tag">Next.js</span><span class="tag">React</span><span class="tag">FastAPI</span>
+          <span class="tag">PostgreSQL</span><span class="tag">Stripe</span><span class="tag">OAuth</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block__title">MLOps &amp; Outils</div>
+        <div class="skill-block__list">
+          <span class="tag">Docker</span><span class="tag">Git</span><span class="tag">MLflow</span>
+          <span class="tag">CI/CD</span><span class="tag">HuggingFace</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="section__eyebrow">// RESTONS EN CONTACT</div>
+    <h2 class="section__title">Contact</h2>
+
+    <div class="contact__list">
+      <a class="contact__item" href="mailto:Kawther.JGUIRIM@esprim.tn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+        <div>
+          <div class="label">EMAIL</div>
+          <div class="value">Kawther.JGUIRIM@esprim.tn</div>
+        </div>
+      </a>
+      <a class="contact__item" href="https://linkedin.com/in/kawthar-jguirim-585355347" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 21v-7a3 3 0 0 1 6 0v7M10 12V9"/></svg>
+        <div>
+          <div class="label">LINKEDIN</div>
+          <div class="value">linkedin.com/in/kawthar-jguirim-585355347</div>
+        </div>
+      </a>
+      <a class="contact__item" href="https://github.com/kawtharjguirim" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+        <div>
+          <div class="label">GITHUB</div>
+          <div class="value">github.com/kawtharjguirim</div>
+        </div>
+      </a>
+    </div>
+
+    <footer>© 2026 Kawthar Jguirim — construit avec HTML &amp; CSS</footer>
+  </section>
+
+</main>
+
+<script>
+  // Surbrillance du lien actif dans la sidebar au scroll
+  const sections = document.querySelectorAll('section[id]');
+  const links = document.querySelectorAll('.sidebar__link');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.sidebar__link[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+
+  // Machine à écrire : rôles qui défilent
+  const roles = ['IA & Deep Learning', 'NLP & RAG', 'Full-Stack SaaS', 'Data Science'];
+  const twEl = document.getElementById('typewriter');
+  if (twEl) {
+    let roleIndex = 0, charIndex = 0, deleting = false;
+    function tick() {
+      const current = roles[roleIndex];
+      if (!deleting) {
+        charIndex++;
+        twEl.textContent = current.slice(0, charIndex);
+        if (charIndex === current.length) { deleting = true; setTimeout(tick, 1600); return; }
+      } else {
+        charIndex--;
+        twEl.textContent = current.slice(0, charIndex);
+        if (charIndex === 0) { deleting = false; roleIndex = (roleIndex + 1) % roles.length; }
+      }
+      setTimeout(tick, deleting ? 35 : 65);
+    }
+    tick();
+  }
+  // Effet tilt 3D interactif sur le portrait (suit la souris) + halo lumineux qui suit le curseur
+  const wrap = document.getElementById('portraitWrap');
+  const tilt = document.getElementById('portraitTilt');
+  const ring = document.getElementById('heroRing');
+  if (wrap && tilt && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    wrap.addEventListener('mousemove', (e) => {
+      const rect = wrap.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      tilt.style.transform = `perspective(700px) rotateY(${x * 16}deg) rotateX(${-y * 16}deg) scale(1.04)`;
+      if (ring) {
+        ring.style.boxShadow = `${-x * 30}px ${-y * 30}px 60px -12px rgba(198,55,111,0.55)`;
+      }
+    });
+    wrap.addEventListener('mouseleave', () => {
+      tilt.style.transform = 'perspective(700px) rotateY(0deg) rotateX(0deg) scale(1)';
+      if (ring) ring.style.boxShadow = '';
+    });
+  }
+
+  // Repli discret si une icône de skill ne charge pas : badge avec l'initiale
+  document.querySelectorAll('.skill-icon-card__logo img').forEach((img) => {
+    img.addEventListener('error', () => {
+      const span = document.createElement('span');
+      span.className = 'skill-icon-fallback';
+      span.textContent = (img.alt || '?').charAt(0);
+      img.replaceWith(span);
+    });
+  });
+
+  // Tilt 3D interactif sur chaque carte de skill (suit la souris)
+  if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    document.querySelectorAll('.skill-icon-card').forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = `perspective(600px) rotateY(${x * 18}deg) rotateX(${-y * 18}deg) translateY(-6px) scale(1.05)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  }
+
+  // Repli discret si un logo de la constellation ne charge pas
+  document.querySelectorAll('.orbit__logo img').forEach((img) => {
+    img.addEventListener('error', () => {
+      const span = document.createElement('span');
+      span.className = 'orbit__fallback';
+      span.textContent = (img.alt || '?').charAt(0);
+      img.replaceWith(span);
+    });
+  });
+
+  // ---- About Me : animation d'entrée au scroll + tilt 3D interactif ----
+  const aboutSection = document.getElementById('about');
+  if (aboutSection) {
+    const aboutObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          aboutSection.classList.add('about-me--visible');
+          aboutObserver.unobserve(aboutSection);
+        }
+      });
+    }, { threshold: 0.25 });
+    aboutObserver.observe(aboutSection);
+  }
+
+  const aboutCard = document.getElementById('aboutCard');
+  if (aboutCard && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    aboutCard.addEventListener('mousemove', (e) => {
+      const rect = aboutCard.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      aboutCard.style.transform = `perspective(1400px) rotateY(${x * 3.5}deg) rotateX(${-y * 3.5}deg) translateY(-2px)`;
+    });
+    aboutCard.addEventListener('mouseleave', () => {
+      aboutCard.style.transform = 'perspective(1400px) rotateY(0deg) rotateX(0deg) translateY(0)';
+    });
+  }
+
+  // ---- Resume : animation d'entrée au scroll ----
+  const resumeTimelines = document.getElementById('resumeTimelines');
+  if (resumeTimelines) {
+    const resumeObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          resumeTimelines.classList.add('resume-timelines--visible');
+          resumeObserver.unobserve(resumeTimelines);
+        }
+      });
+    }, { threshold: 0.15 });
+    resumeObserver.observe(resumeTimelines);
+  }
+</script>
+
+</body>
+</html>
