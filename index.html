@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kawthar Jguirim — Portfolio</title>
+<title>Kawthar Jguirim | AI &amp; Data Science Engineer</title>
+<meta name="description" content="Kawthar Jguirim — AI &amp; Data Science Engineer building intelligent systems: deep learning, generative AI, RAG pipelines, and full-stack AI products from prototype to production.">
+<meta name="keywords" content="AI Engineer, Data Science, Machine Learning, Deep Learning, Generative AI, RAG, LLM, Computer Vision, Full-Stack AI, Portfolio">
+<meta name="author" content="Kawthar Jguirim">
+<link rel="canonical" href="https://kawtharjguirim.dev/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kawthar Jguirim | AI &amp; Data Science Engineer">
+<meta property="og:description" content="Building intelligent systems from machine learning models to production-ready AI products — deep learning, generative AI, RAG, and full-stack AI engineering.">
+<meta property="og:image" content="assets/kawthar.jpg">
+<meta property="og:url" content="https://kawtharjguirim.dev/">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kawthar Jguirim | AI &amp; Data Science Engineer">
+<meta name="twitter:description" content="AI &amp; Data Science Engineer — deep learning, generative AI, RAG, and full-stack AI systems from prototype to production.">
+<meta name="twitter:image" content="assets/kawthar.jpg">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kawthar Jguirim",
+  "jobTitle": "AI & Data Science Engineer",
+  "url": "https://kawtharjguirim.dev/",
+  "image": "assets/kawthar.jpg",
+  "email": "mailto:Kawther.JGUIRIM@esprim.tn",
+  "sameAs": [
+    "https://github.com/kawtharjguirim",
+    "https://linkedin.com/in/kawthar-jguirim-585355347",
+    "https://x.com/kawthar_Jguirim",
+    "https://www.facebook.com/jguirim.kawthar",
+    "https://www.instagram.com/jguirimkawthar/"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "ESPRIM, Monastir"
+  },
+  "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Generative AI", "Retrieval-Augmented Generation", "Data Science", "Full-Stack Development"]
+}
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav class="sidebar">
-  <div class="sidebar__brand">Kawthar Jguirim</div>
-  <div class="sidebar__role">IA &amp; DATA SCIENCE</div>
+  <div class="sidebar__profile">
+    <div class="sidebar__avatar">
+      <img src="assets/kawthar.jpg" alt="Kawthar Jguirim">
+    </div>
+    <div class="sidebar__brand">Kawthar Jguirim</div>
+    <div class="sidebar__role">AI &amp; DATA SCIENCE</div>
+  </div>
 
   <div class="sidebar__nav">
     <a href="#home" class="sidebar__link active" data-link>
@@ -25,13 +73,21 @@
       <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>
       <span>Resume</span>
     </a>
+    <a href="#pipeline" class="sidebar__link" data-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="5" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><circle cx="19" cy="6" r="2.2"/><path d="M7 7.5 10.5 16M17 7.5 13.5 16"/></svg>
+      <span>Pipeline</span>
+    </a>
+    <a href="#services" class="sidebar__link" data-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
+      <span>Services</span>
+    </a>
     <a href="#portfolio" class="sidebar__link" data-link>
       <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
       <span>Portfolio</span>
     </a>
-    <a href="#competences" class="sidebar__link" data-link>
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-      <span>Compétences</span>
+    <a href="#certifications" class="sidebar__link" data-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="m9 13.5-1.5 7L12 18l4.5 2.5-1.5-7"/></svg>
+      <span>Certifications</span>
     </a>
     <a href="#contact" class="sidebar__link" data-link>
       <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
@@ -39,12 +95,26 @@
     </a>
   </div>
 
+  <a href="CV_Kawthar_LaTeX.pdf" class="sidebar__cv-btn" download>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"/></svg>
+    Download CV
+  </a>
+
   <div class="sidebar__footer">
     <a href="https://github.com/kawtharjguirim" target="_blank" aria-label="GitHub">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
     </a>
     <a href="https://linkedin.com/in/kawthar-jguirim-585355347" target="_blank" aria-label="LinkedIn">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48Z"/></svg>
+    </a>
+    <a href="https://x.com/kawthar_Jguirim" target="_blank" aria-label="X">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.3 22H1.2l8.1-9.3L1 2h7.3l5 6.6L18.9 2Zm-1.2 18h1.9L7.4 4H5.4l12.3 16Z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/jguirim.kawthar" target="_blank" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V6.5c0-.83.67-1.5 1.5-1.5H17V2h-2.5A4.5 4.5 0 0 0 10 6.5V9H7v3h3v10h4V12h3.1l.9-3h-4V9Z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/jguirimkawthar/" target="_blank" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
     </a>
   </div>
 </nav>
@@ -54,49 +124,64 @@
   <!-- ================= HOME ================= -->
   <section id="home">
     <div class="hero__text">
-      <div class="hero__eyebrow">Bienvenue, je suis</div>
+      <div class="hero__eyebrow">Welcome, I'm</div>
       <h1 class="hero__name">Kawthar Jguirim</h1>
       <p class="hero__role">
-        Ingénieure <span class="typewriter" id="typewriter"></span><span class="typewriter-cursor">|</span>
+        Engineer <span class="typewriter" id="typewriter"></span><span class="typewriter-cursor">|</span>
       </p>
+      <p class="hero__stack-line">Machine Learning · Deep Learning · Generative AI · RAG · Full-Stack AI</p>
       <div class="hero__cta">
         <a href="#portfolio" class="btn btn--primary">
-          Voir mon Portfolio
+          View my Projects
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <a href="CV_Kawthar_LaTeX.pdf" class="btn btn--ghost" download>
-          Télécharger mon CV
+          Download CV
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"/></svg>
+        </a>
+        <a href="#contact" class="hero__link-secondary">
+          Let's Connect
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="hero__quicklinks">
+        <a href="https://github.com/kawtharjguirim" target="_blank" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/kawthar-jguirim-585355347" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48Z"/></svg>
+          <span>LinkedIn</span>
         </a>
       </div>
     </div>
 
     <div class="hero__portrait-wrap" id="portraitWrap">
 
-      <!-- Constellation orbitale — logos officiels -->
+      <!-- Orbital constellation — official logos -->
       <div class="orbit" id="orbitOuter">
-        <div class="orbit__node" style="--angle: 0deg;" data-name="Python">
+        <div class="orbit__node" style="--angle: 0deg;" data-name="Python" data-target="#services">
           <span class="orbit__logo"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy"></span>
         </div>
-        <div class="orbit__node" style="--angle: 45deg;" data-name="PyTorch">
+        <div class="orbit__node" style="--angle: 45deg;" data-name="PyTorch" data-target="#services">
           <span class="orbit__logo"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="PyTorch" loading="lazy"></span>
         </div>
-        <div class="orbit__node" style="--angle: 90deg;" data-name="Hugging Face">
+        <div class="orbit__node" style="--angle: 90deg;" data-name="Hugging Face" data-target="#certifications">
           <span class="orbit__logo"><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="Hugging Face" loading="lazy"></span>
         </div>
-        <div class="orbit__node" style="--angle: 135deg;" data-name="FastAPI">
+        <div class="orbit__node" style="--angle: 135deg;" data-name="FastAPI" data-target="#proj-forge">
           <span class="orbit__logo"><img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" loading="lazy"></span>
         </div>
-        <div class="orbit__node" style="--angle: 180deg;" data-name="Next.js">
+        <div class="orbit__node" style="--angle: 180deg;" data-name="Next.js" data-target="#proj-writemind">
           <span class="orbit__logo"><img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" loading="lazy"></span>
         </div>
-        <div class="orbit__node" style="--angle: 225deg;" data-name="TensorFlow">
+        <div class="orbit__node" style="--angle: 225deg;" data-name="TensorFlow" data-target="#proj-neuropredict">
           <span class="orbit__logo"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" loading="lazy"></span>
         </div>
-        <div class="orbit__node" style="--angle: 270deg;" data-name="Docker">
+        <div class="orbit__node" style="--angle: 270deg;" data-name="Docker" data-target="#proj-lettro">
           <span class="orbit__logo"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" loading="lazy"></span>
         </div>
-        <div class="orbit__node" style="--angle: 315deg;" data-name="LangChain">
+        <div class="orbit__node" style="--angle: 315deg;" data-name="LangChain" data-target="#proj-memo">
           <span class="orbit__logo"><img src="https://cdn.simpleicons.org/langchain/1C3C3C" alt="LangChain" loading="lazy"></span>
         </div>
       </div>
@@ -126,6 +211,11 @@
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
       </div>
     </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-indicator__label">Discover</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+    </a>
   </section>
 
   <!-- ================= ABOUT ================= -->
@@ -151,38 +241,46 @@
     </svg>
 
     <p class="about-me__tagline">
-      🚀 Portée par la curiosité, la rigueur technique et une vraie sensibilité créative. Construisons l'avenir ensemble !
+      🚀 Driven by curiosity, technical rigor, and a genuine creative sensibility. Let's build the future together!
     </p>
 
     <div class="about-me__card" id="aboutCard">
       <div class="about-me__facts">
         <div class="about-me__fact">
-          <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-          <strong>Âge :</strong> <span>23 ans</span>
+          <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6L12 2Z"/></svg></span>
+          <strong>Focus:</strong> <span>AI · Data Science · Machine Learning</span>
         </div>
         <div class="about-me__fact">
           <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg></span>
-          <strong>Diplôme :</strong> <span>Génie Informatique — IA &amp; Data Science</span>
+          <strong>Degree:</strong> <span>Computer Science Engineering — AI &amp; Data Science</span>
         </div>
         <div class="about-me__fact">
-          <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2Z"/></svg></span>
-          <strong>Téléphone :</strong> <span>+216 95 552 229</span>
+          <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12.5 11 15l5-6"/></svg></span>
+          <strong>Availability:</strong> <span>Open to internships &amp; PFE opportunities</span>
         </div>
         <div class="about-me__fact">
           <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg></span>
-          <strong>Email :</strong> <span>Kawther.JGUIRIM@esprim.tn</span>
+          <strong>Email:</strong> <span>Kawther.JGUIRIM@esprim.tn</span>
         </div>
         <div class="about-me__fact">
           <span class="about-me__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6-9.3-10A5.5 5.5 0 0 1 12 5a5.5 5.5 0 0 1 9.3 6C19 15 12 21 12 21Z"/><circle cx="12" cy="10.5" r="2"/></svg></span>
-          <strong>Ville :</strong> <span>Sayada, Monastir, Tunisie</span>
+          <strong>Location:</strong> <span>Tunisia</span>
         </div>
       </div>
 
       <div class="about-me__bio">
-        🚀 Étudiante ingénieure passionnée par l'IA et le Data Science, avec une approche de bout en bout :
-        du modèle de deep learning à la plateforme SaaS déployée en production. Expérience concrète en
-        RAG multimodal, deep learning médical et architectures full-stack. Ouverte aux stages PFE et aux
-        collaborations sur des projets à fort impact.
+        🚀 I design and ship end-to-end AI systems — from training a deep learning model to
+        deploying it inside a production-ready SaaS platform. My work spans multimodal RAG
+        pipelines, medical imaging with deep learning, and full-stack architectures (FastAPI,
+        Next.js, Docker) that take a model past the notebook and into something people can
+        actually use.
+      </div>
+
+      <div class="about-me__cv">
+        <a href="CV_Kawthar_LaTeX.pdf" class="btn btn--primary" download>
+          Download my CV
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"/></svg>
+        </a>
       </div>
 
       <div class="about-me__socials">
@@ -209,7 +307,7 @@
         <div class="skills-block skills-block--1">
           <div class="skills-block__header">
             <span class="skills-block__dot"></span>
-            <h3 class="skills-block__title">Langages &amp; Frameworks Web</h3>
+            <h3 class="skills-block__title">Languages &amp; Web Frameworks</h3>
           </div>
           <div class="skills-block__grid">
             <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" loading="lazy"></div><div class="skill-icon-card__label">HTML</div></div>
@@ -226,7 +324,7 @@
         <div class="skills-block skills-block--2">
           <div class="skills-block__header">
             <span class="skills-block__dot"></span>
-            <h3 class="skills-block__title">Bases de données &amp; Vector Stores</h3>
+            <h3 class="skills-block__title">Databases &amp; Vector Stores</h3>
           </div>
           <div class="skills-block__grid">
             <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" loading="lazy"></div><div class="skill-icon-card__label">MySQL</div></div>
@@ -240,7 +338,7 @@
         <div class="skills-block skills-block--3">
           <div class="skills-block__header">
             <span class="skills-block__dot"></span>
-            <h3 class="skills-block__title">IA &amp; Deep Learning</h3>
+            <h3 class="skills-block__title">AI &amp; Deep Learning</h3>
           </div>
           <div class="skills-block__grid">
             <div class="skill-icon-card"><div class="skill-icon-card__logo"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" loading="lazy"></div><div class="skill-icon-card__label">Python</div></div>
@@ -302,19 +400,8 @@
 
   <!-- ================= RESUME ================= -->
   <section id="resume">
-    <div class="section__eyebrow">// CV</div>
+    
     <h2 class="section__title">Resume</h2>
-
-    <div class="resume__card">
-      <div>
-        <h3 style="font-family:var(--font-display); font-size:1.15rem;">CV complet — PDF</h3>
-        <p>Formation, expérience professionnelle, 8 projets détaillés, compétences techniques et certifications.</p>
-      </div>
-      <a href="CV_Kawthar_LaTeX.pdf" class="btn btn--primary" download>
-        Télécharger le CV
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"/></svg>
-      </a>
-    </div>
 
     <div class="resume-timelines" id="resumeTimelines">
       <div class="resume-col">
@@ -322,14 +409,14 @@
           <span class="resume-col__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
           </span>
-          Formation
+          Education
         </div>
         <div class="timeline">
           <div class="timeline__item">
             <span class="timeline__dot"></span>
             <div class="timeline__card">
-              <div class="timeline__date">Depuis septembre 2025</div>
-              <div class="timeline__title">Cycle Ingénieur en Informatique (2ᵉ année)</div>
+              <div class="timeline__date">Since September 2025</div>
+              <div class="timeline__title">Computer Science Engineering Cycle (2nd year)</div>
               <div class="timeline__place">ESPRIM, Monastir</div>
             </div>
           </div>
@@ -337,7 +424,7 @@
             <span class="timeline__dot"></span>
             <div class="timeline__card">
               <div class="timeline__date">2022 – 2023</div>
-              <div class="timeline__title">Cycle préparatoire classique</div>
+              <div class="timeline__title">Preparatory Cycle (Classical track)</div>
               <div class="timeline__place">ESPRIM, Monastir</div>
             </div>
           </div>
@@ -345,7 +432,7 @@
             <span class="timeline__dot"></span>
             <div class="timeline__card">
               <div class="timeline__date">2021 – 2022</div>
-              <div class="timeline__title">Baccalauréat Mathématiques</div>
+              <div class="timeline__title">Mathematics Baccalaureate</div>
               <div class="timeline__place">Lycée Sayada, Monastir</div>
             </div>
           </div>
@@ -357,27 +444,171 @@
           <span class="resume-col__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
           </span>
-          Expérience professionnelle
+          Professional Experience
         </div>
         <div class="timeline">
           <div class="timeline__item">
             <span class="timeline__dot"></span>
             <div class="timeline__card">
-              <div class="timeline__date">Juin – Août 2026</div>
-              <div class="timeline__title">Stagiaire Ingénieure IA — Memo (Second Brain SaaS)</div>
-              <div class="timeline__place">QInsights BV (stage à distance)</div>
-              <p class="timeline__desc">Plateforme SaaS de gestion de connaissances avec pipeline RAG multimodal, connecteurs tiers, transcription vocale temps réel et facturation Stripe.</p>
+              <div class="timeline__date">June – August 2026</div>
+              <div class="timeline__title">AI Engineering Intern — Memo (Second Brain SaaS)</div>
+              <div class="timeline__place">QInsights BV (remote internship)</div>
+              <p class="timeline__desc">SaaS knowledge management platform with a multimodal RAG pipeline, third-party connectors, real-time voice transcription, and Stripe billing.</p>
             </div>
           </div>
           <div class="timeline__item">
             <span class="timeline__dot"></span>
             <div class="timeline__card">
-              <div class="timeline__date">Juin – Juillet 2025</div>
-              <div class="timeline__title">Développeuse Full-Stack — Lettro Game</div>
-              <div class="timeline__place">InternTechLabs — Summer Intern Program</div>
-              <p class="timeline__desc">Jeu de mots multijoueur en temps réel : backend Node.js/Express/WebSockets, frontend Next.js/TypeScript, persistance PostgreSQL, conteneurisation Docker.</p>
+              <div class="timeline__date">June – July 2025</div>
+              <div class="timeline__title">Full-Stack Developer — Lettro Game</div>
+              <div class="timeline__place">MobiliteLabs — Summer Intern Program</div>
+              <p class="timeline__desc">Real-time multiplayer word game: Node.js/Express/WebSockets backend, Next.js/TypeScript frontend, PostgreSQL persistence, Docker containerization.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FROM MODEL TO PRODUCTION ================= -->
+  <section id="pipeline">
+    <div class="section__eyebrow">// HOW I BUILD</div>
+    <h2 class="section__title">From Model to Production</h2>
+    <p class="pipeline-intro">I don't just train models — I turn them into real, deployable systems. Click a stage to see how.</p>
+
+    <div class="pipeline" id="pipelineTrack">
+      <div class="pipeline__track"></div>
+
+      <button class="pipeline__step is-active" type="button" data-step="0">
+        <span class="pipeline__num">01</span>
+        <span class="pipeline__label">Data</span>
+      </button>
+      <button class="pipeline__step" type="button" data-step="1">
+        <span class="pipeline__num">02</span>
+        <span class="pipeline__label">Preprocessing</span>
+      </button>
+      <button class="pipeline__step" type="button" data-step="2">
+        <span class="pipeline__num">03</span>
+        <span class="pipeline__label">Machine Learning</span>
+      </button>
+      <button class="pipeline__step" type="button" data-step="3">
+        <span class="pipeline__num">04</span>
+        <span class="pipeline__label">Deep Learning</span>
+      </button>
+      <button class="pipeline__step" type="button" data-step="4">
+        <span class="pipeline__num">05</span>
+        <span class="pipeline__label">LLM / RAG</span>
+      </button>
+      <button class="pipeline__step" type="button" data-step="5">
+        <span class="pipeline__num">06</span>
+        <span class="pipeline__label">API</span>
+      </button>
+      <button class="pipeline__step" type="button" data-step="6">
+        <span class="pipeline__num">07</span>
+        <span class="pipeline__label">Docker</span>
+      </button>
+      <button class="pipeline__step" type="button" data-step="7">
+        <span class="pipeline__num">08</span>
+        <span class="pipeline__label">Deployment</span>
+      </button>
+    </div>
+
+    <div class="pipeline__panel" id="pipelinePanel">
+      <!-- Panel content injected by JS from PIPELINE_DATA -->
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services">
+    <div class="services__panel" id="servicesPanel">
+      <span class="services__glow services__glow--1"></span>
+      <span class="services__glow services__glow--2"></span>
+      <span class="services__sparkle services__sparkle--1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg></span>
+      <span class="services__sparkle services__sparkle--2"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg></span>
+      <span class="services__sparkle services__sparkle--3"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg></span>
+      <div class="services__stars" aria-hidden="true"></div>
+
+      
+      <h2 class="services__title">Services</h2>
+      <p class="services__intro">From research to production: I design custom AI and web solutions that are robust and built to last. Let's build something useful, together. 🚀</p>
+
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 2 5v1a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M15 3a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-2 5v1a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3Z"/></svg>
+            </span>
+            <span class="service-card__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">AI &amp; Deep Learning</h3>
+          <p class="service-card__desc">Design, training, and optimization of custom vision and prediction models, from prototype to production-ready.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </span>
+            <span class="service-card__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">NLP &amp; RAG Agents</h3>
+          <p class="service-card__desc">Smart chatbots and assistants connected to your data: retrieval-augmented search, LangChain orchestration, relevance evaluation.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+            </span>
+            <span class="service-card__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">Full-Stack &amp; SaaS</h3>
+          <p class="service-card__desc">Complete web applications — React/Next.js interface, FastAPI backend, authentication and payments — built to scale.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+            </span>
+            <span class="service-card__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">Data Engineering</h3>
+          <p class="service-card__desc">Large-scale processing and streaming pipelines (Spark, Kafka), relational and NoSQL database modeling and optimization.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </span>
+            <span class="service-card__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">MLOps &amp; Deployment</h3>
+          <p class="service-card__desc">Docker containerization, continuous integration, experiment tracking, and cloud production deployment (GCP Vertex AI, Azure ML).</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 3Z"/></svg>
+            </span>
+            <span class="service-card__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12.5l5 5L20 6"/></svg>
+            </span>
+          </div>
+          <h3 class="service-card__title">Consulting &amp; Prototyping</h3>
+          <p class="service-card__desc">Technical scoping, rapid proofs of concept, and guidance to turn an idea into a testable AI product.</p>
         </div>
       </div>
     </div>
@@ -385,153 +616,564 @@
 
   <!-- ================= PORTFOLIO ================= -->
   <section id="portfolio">
-    <div class="section__eyebrow">// PROJETS</div>
+    
     <h2 class="section__title">Portfolio</h2>
 
     <div class="project-grid">
 
-      <div class="project-card">
+      <div class="project-card" id="proj-neuropredict">
+        <div class="demo-frame demo-frame--1">
+          <div class="demo-frame__bar">
+            <span></span><span></span><span></span>
+            <div class="demo-frame__url">neuropredict.app</div>
+          </div>
+          <div class="demo-frame__screen">
+            <svg class="demo-frame__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3a4 4 0 0 0-4 4c0 .5.1 1 .3 1.4A3.5 3.5 0 0 0 4 11.5 3.5 3.5 0 0 0 6.5 15c0 .2 0 .3.1.5A3 3 0 0 0 9 20a3 3 0 0 0 2-.8V6a3 3 0 0 0-2-3Z"/><path d="M15 3a4 4 0 0 1 4 4c0 .5-.1 1-.3 1.4A3.5 3.5 0 0 1 20 11.5 3.5 3.5 0 0 1 17.5 15c0 .2 0 .3-.1.5A3 3 0 0 1 15 20a3 3 0 0 1-2-.8V6a3 3 0 0 1 2-3Z"/></svg>
+            <div class="demo-frame__lines"><span></span><span></span><span></span></div>
+          </div>
+        </div>
         <div class="project-card__title">NEURO PREDICT</div>
-        <div class="project-card__desc">Détection et prédiction de lésions de sclérose en plaques par IRM (91,52 % accuracy, ResNet-50).</div>
+        <div class="project-card__desc">Detection and prediction of multiple sclerosis lesions from brain MRI (91.52% accuracy, ResNet-50).</div>
         <div class="project-card__tags"><span class="tag">ResNet-50</span><span class="tag">U-Net</span><span class="tag">TensorFlow</span></div>
+
+        <button class="project-card__toggle" type="button" aria-expanded="false">
+          <span class="project-card__toggle-label">View features</span>
+          <svg class="project-card__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="project-card__features">
+          <div class="project-card__features-inner">
+            <h4>🎯 Objective</h4>
+            <ul class="project-card__feature-list">
+              <li>Detect and predict the progression of MS lesions on MRI</li>
+            </ul>
+            <h4>⚙️ Pipeline</h4>
+            <ul class="project-card__feature-list">
+              <li>MRI preprocessing + MS/healthy classification (ResNet-50)</li>
+              <li>Lesion segmentation and prediction (U-Net Double Head)</li>
+              <li>Evaluation with medical metrics</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="project-card__links">
-          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/kawtharjguirim/Neuro-Predict-MS-" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg><span>View code</span></a>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" id="proj-forge">
+        <div class="demo-frame demo-frame--2">
+          <div class="demo-frame__bar">
+            <span></span><span></span><span></span>
+            <div class="demo-frame__url">tumornet.app</div>
+          </div>
+          <div class="demo-frame__screen">
+            <svg class="demo-frame__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8" fill="currentColor" stroke="none"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+            <div class="demo-frame__lines"><span></span><span></span><span></span></div>
+          </div>
+        </div>
         <div class="project-card__title">TumorNet</div>
-        <div class="project-card__desc">Classification de tumeurs en 5 stades avec explicabilité Grad-CAM et détection d'anomalies.</div>
+        <div class="project-card__desc">Tumor classification across 5 stages with Grad-CAM explainability and anomaly detection.</div>
         <div class="project-card__tags"><span class="tag">EfficientNetB0</span><span class="tag">Focal Loss</span><span class="tag">Streamlit</span></div>
+
+        <button class="project-card__toggle" type="button" aria-expanded="false">
+          <span class="project-card__toggle-label">View features</span>
+          <svg class="project-card__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="project-card__features">
+          <div class="project-card__features-inner">
+            <h4>🔬 Model</h4>
+            <ul class="project-card__feature-list">
+              <li>Classification across 5 stages (healthy → stage IV)</li>
+              <li>EfficientNetB0 + Focal Loss, 2-phase training (feature extraction then fine-tuning)</li>
+            </ul>
+            <h4>📊 Interpretability</h4>
+            <ul class="project-card__feature-list">
+              <li>Grad-CAM explainability + anomaly detection</li>
+              <li>Interactive Streamlit dashboard</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="project-card__links">
-          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/kawtharjguirim/tumeur" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg><span>View code</span></a>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" id="proj-writemind">
+        <div class="demo-frame demo-frame--3">
+          <div class="demo-frame__bar">
+            <span></span><span></span><span></span>
+            <div class="demo-frame__url">forgeai.app</div>
+          </div>
+          <div class="demo-frame__screen">
+            <svg class="demo-frame__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/><path d="m8.5 12 2 2 4.5-4.5"/></svg>
+            <div class="demo-frame__lines"><span></span><span></span><span></span></div>
+          </div>
+        </div>
         <div class="project-card__title">Forge AI</div>
-        <div class="project-card__desc">Plateforme SaaS de préparation aux entretiens : CV analyzer, entretiens IA adaptatifs, architecture multi-agent.</div>
+        <div class="project-card__desc">SaaS interview preparation platform: CV analyzer, adaptive AI interviews, multi-agent architecture.</div>
         <div class="project-card__tags"><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">Celery</span></div>
+
+        <button class="project-card__toggle" type="button" aria-expanded="false">
+          <span class="project-card__toggle-label">View features</span>
+          <svg class="project-card__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="project-card__features">
+          <div class="project-card__features-inner">
+            <h4>🎯 Preparation</h4>
+            <ul class="project-card__feature-list">
+              <li><strong>Digital Twin</strong> — a living skill profile, updated by every module</li>
+              <li><strong>CV & GitHub Analyzer</strong> — ATS score, strengths/gaps, repo analysis</li>
+              <li><strong>AI Mock Interview</strong> — 3 agents (Interviewer, Evaluator, Coach), voice via Groq Whisper</li>
+            </ul>
+            <h4>🧪 Assessment</h4>
+            <ul class="project-card__feature-list">
+              <li><strong>Coding</strong> — 29 problems, 7 languages, AI review</li>
+              <li><strong>System Design</strong> — 10 scenarios, AI review of the diagram</li>
+            </ul>
+            <h4>📈 Career Tracking</h4>
+            <ul class="project-card__feature-list">
+              <li><strong>Job Matcher & Skill Gap</strong> — compatibility and gaps against a job posting</li>
+              <li><strong>Career Roadmap & Learning Hub</strong> — path and 173+ targeted resources</li>
+              <li><strong>Career Assistant</strong> — RAG chat grounded in the Digital Twin</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="project-card__links">
-          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/kawtharjguirim/Forge-AI" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg><span>View code</span></a>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" id="proj-memo">
+        <div class="demo-frame demo-frame--4">
+          <div class="demo-frame__bar">
+            <span></span><span></span><span></span>
+            <div class="demo-frame__url">writemindai.app</div>
+          </div>
+          <div class="demo-frame__screen">
+            <svg class="demo-frame__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+            <div class="demo-frame__lines"><span></span><span></span><span></span></div>
+          </div>
+        </div>
         <div class="project-card__title">WriteMind AI</div>
-        <div class="project-card__desc">Espace de travail IA unifié : éditeur, humanizer, détecteur de contenu généré, RAG, AI Studio multi-agents.</div>
+        <div class="project-card__desc">Unified AI workspace: editor, humanizer, AI-content detector, RAG, multi-agent AI Studio.</div>
         <div class="project-card__tags"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">Groq</span></div>
+
+        <button class="project-card__toggle" type="button" aria-expanded="false">
+          <span class="project-card__toggle-label">View features</span>
+          <svg class="project-card__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="project-card__features">
+          <div class="project-card__features-inner">
+            <h4>📝 Editor</h4>
+            <ul class="project-card__feature-list">
+              <li>Rich-text editing (Tiptap) + AI assistant: improve, summarize, translate into 9 languages</li>
+              <li>PDF/Markdown export, public read-only sharing</li>
+            </ul>
+            <h4>📚 Knowledge Base (RAG)</h4>
+            <ul class="project-card__feature-list">
+              <li>Multi-format upload (PDF, DOCX, PPTX...) with citations back to the source</li>
+            </ul>
+            <h4>🪄 Humanizer & AI Detector</h4>
+            <ul class="project-card__feature-list">
+              <li>Natural-sounding rewrites + AI-detection score (heuristic or Groq LLM)</li>
+            </ul>
+            <h4>🔐 Auth & Dashboard</h4>
+            <ul class="project-card__feature-list">
+              <li>Google/GitHub OAuth, JWT, real-time statistics</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="project-card__links">
-          <a href="https://github.com/kawtharjguirim/WriteMind" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/kawtharjguirim/WriteMind" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg><span>View code</span></a>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" id="proj-lettro">
+        <div class="demo-frame demo-frame--5">
+          <div class="demo-frame__bar">
+            <span></span><span></span><span></span>
+            <div class="demo-frame__url">voxia.app</div>
+          </div>
+          <div class="demo-frame__screen">
+            <svg class="demo-frame__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2-7 3 15 3-10 2 5h3M20 10v4"/></svg>
+            <div class="demo-frame__lines"><span></span><span></span><span></span></div>
+          </div>
+        </div>
         <div class="project-card__title">VoxIA</div>
-        <div class="project-card__desc">Assistant vocal conversationnel temps réel — pipeline STT → LLM → TTS via LiveKit Agents.</div>
+        <div class="project-card__desc">Real-time conversational voice assistant — STT → LLM → TTS pipeline via LiveKit Agents.</div>
         <div class="project-card__tags"><span class="tag">LiveKit</span><span class="tag">Python</span><span class="tag">WebRTC</span></div>
+
+        <button class="project-card__toggle" type="button" aria-expanded="false">
+          <span class="project-card__toggle-label">View features</span>
+          <svg class="project-card__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="project-card__features">
+          <div class="project-card__features-inner">
+            <ul class="project-card__feature-list">
+              <li><strong>Natural voice conversation</strong> — no "send" button, just like a phone call</li>
+              <li><strong>STT → LLM → TTS pipeline</strong> orchestrated by LiveKit Agents, interruption handling</li>
+              <li><strong>Live transcript</strong> shown as chat bubbles</li>
+              <li><strong>Reactive interface</strong> — animated orb reflecting state (idle/listening)</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="project-card__links">
-          <a href="https://github.com/kawtharjguirim/VoxIA" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/kawtharjguirim/VoxIA" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg><span>View code</span></a>
         </div>
       </div>
 
       <div class="project-card">
+        <div class="demo-frame demo-frame--6">
+          <div class="demo-frame__bar">
+            <span></span><span></span><span></span>
+            <div class="demo-frame__url">memo.app</div>
+          </div>
+          <div class="demo-frame__screen">
+            <svg class="demo-frame__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M9 7h7M9 11h5"/></svg>
+            <div class="demo-frame__lines"><span></span><span></span><span></span></div>
+          </div>
+        </div>
         <div class="project-card__title">Memo</div>
-        <div class="project-card__desc">Second Brain SaaS avec RAG multimodal, connecteurs tiers et transcription vocale temps réel (stage QInsights BV).</div>
+        <div class="project-card__desc">Second Brain SaaS with multimodal RAG, third-party connectors, and real-time voice transcription (QInsights BV internship).</div>
         <div class="project-card__tags"><span class="tag">Next.js</span><span class="tag">ChromaDB</span><span class="tag">Stripe</span></div>
+
+        <button class="project-card__toggle" type="button" aria-expanded="false">
+          <span class="project-card__toggle-label">View features</span>
+          <svg class="project-card__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="project-card__features">
+          <div class="project-card__features-inner">
+            <h4>🧠 Knowledge Base</h4>
+            <ul class="project-card__feature-list">
+              <li>Topic-based capsules, multimodal upload (text, PDF, image, audio)</li>
+              <li>Multimodal RAG (PyMuPDF + CLIP embeddings), live transcription (WhisperLive)</li>
+            </ul>
+            <h4>🔍 AI Search & Constellation</h4>
+            <ul class="project-card__feature-list">
+              <li>Streamed RAG search with source citations</li>
+              <li>Interactive semantic map of documents (force-directed SVG)</li>
+            </ul>
+            <h4>🤖 AI Agents (CrewAI)</h4>
+            <ul class="project-card__feature-list">
+              <li><strong>Research Agent</strong> — multi-agent research, structured report</li>
+              <li><strong>Weekly Digest</strong> — automatic narrative recap, sent by email</li>
+            </ul>
+            <h4>👥 Team & Billing</h4>
+            <ul class="project-card__feature-list">
+              <li>Roles, invitations, shared workspaces</li>
+              <li>Stripe: Free/Pro/Enterprise plans, self-service portal</li>
+            </ul>
+            <h4>🔌 Connectors</h4>
+            <ul class="project-card__feature-list">
+              <li>Slack, GitHub, Notion, Drive, Trello, Jira, Calendar...</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="project-card__links">
-          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/kawtharjguirim/Memo_app" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg><span>View code</span></a>
         </div>
       </div>
 
       <div class="project-card">
+        <div class="demo-frame demo-frame--7">
+          <div class="demo-frame__bar">
+            <span></span><span></span><span></span>
+            <div class="demo-frame__url">studymateai.app</div>
+          </div>
+          <div class="demo-frame__screen">
+            <svg class="demo-frame__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M10 8.5 14 11l-4 2.5v-5Z" fill="currentColor" stroke="none"/></svg>
+            <div class="demo-frame__lines"><span></span><span></span><span></span></div>
+          </div>
+        </div>
         <div class="project-card__title">StudyMate AI</div>
-        <div class="project-card__desc">Assistant académique full-stack : résumé automatique de PDF et Audio Studio pour podcasts.</div>
+        <div class="project-card__desc">Full-stack academic assistant: automatic PDF summarization and an Audio Studio for podcasts.</div>
         <div class="project-card__tags"><span class="tag">Next.js 14</span><span class="tag">Groq LLaMA 3.1</span></div>
+
+        <button class="project-card__toggle" type="button" aria-expanded="false">
+          <span class="project-card__toggle-label">View features</span>
+          <svg class="project-card__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="project-card__features">
+          <div class="project-card__features-inner">
+            <h4>📖 Study</h4>
+            <ul class="project-card__feature-list">
+              <li><strong>PDF Summary</strong> — key points, definitions, conclusion</li>
+              <li><strong>Flashcards & Quizzes</strong> — interactive review with instant grading</li>
+              <li><strong>Audio Studio</strong> — revision podcast (TTS) + Dictation (STT)</li>
+            </ul>
+            <h4>👤 Account</h4>
+            <ul class="project-card__feature-list">
+              <li>AI tutor chat, progress dashboard</li>
+              <li>Google OAuth + email/OTP sign-up</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="project-card__links">
-          <a href="https://github.com/kawtharjguirim" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/kawtharjguirim/-StudyMate-AI" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg><span>View code</span></a>
         </div>
       </div>
 
       <div class="project-card">
+        <div class="demo-frame demo-frame--8">
+          <div class="demo-frame__bar">
+            <span></span><span></span><span></span>
+            <div class="demo-frame__url">lettrogame.app</div>
+          </div>
+          <div class="demo-frame__screen">
+            <svg class="demo-frame__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            <div class="demo-frame__lines"><span></span><span></span><span></span></div>
+          </div>
+        </div>
         <div class="project-card__title">Lettro Game</div>
-        <div class="project-card__desc">Jeu de mots multijoueur en temps réel, synchronisation WebSockets (programme InternTechLabs).</div>
+        <div class="project-card__desc">Real-time multiplayer word game, WebSocket synchronization (InternTechLabs program).</div>
         <div class="project-card__tags"><span class="tag">Node.js</span><span class="tag">WebSockets</span><span class="tag">PostgreSQL</span></div>
+
+        <button class="project-card__toggle" type="button" aria-expanded="false">
+          <span class="project-card__toggle-label">View features</span>
+          <svg class="project-card__toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="project-card__features">
+          <div class="project-card__features-inner">
+            <ul class="project-card__feature-list">
+              <li>Random letters, timed round (60s)</li>
+              <li>Real-time multiplayer via WebSockets, live scoring</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="project-card__links">
-          <a href="https://github.com/kawtharjguirim/lettro-game" target="_blank">GitHub ↗</a>
+          <a href="https://github.com/kawtharjguirim/lettro-game" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg><span>View code</span></a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ================= COMPÉTENCES ================= -->
-  <section id="competences">
-    <div class="section__eyebrow">// EXPERTISE</div>
-    <h2 class="section__title">Compétences</h2>
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications">
+    
+    <h2 class="section__title">Certifications</h2>
 
-    <div class="skills-grid">
-      <div class="skill-block">
-        <div class="skill-block__title">IA / Deep Learning</div>
-        <div class="skill-block__list">
-          <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">CNN</span>
-          <span class="tag">U-Net</span><span class="tag">ResNet</span><span class="tag">EfficientNet</span>
+
+    <div class="certs-grid" id="certsGrid">
+      <div class="cert-card">
+        <button class="cert-card__img-btn" type="button" data-cert="hf-llm">
+          <img src="assets/certs/hf-llm-course.webp" alt="The LLM Course – Fundamentals of LLMs">
+        </button>
+        <div class="cert-card__powered">
+          <span class="cert-card__powered-label">Powered by</span>
+          <span class="cert-card__powered-badge cert-card__powered-badge--hf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 13.5s1.5 2 4 2 4-2 4-2M9 9.5h.01M15 9.5h.01"/></svg>
+            Hugging Face
+          </span>
         </div>
+        <div class="cert-card__title">The LLM Course – Fundamentals of LLMs</div>
       </div>
-      <div class="skill-block">
-        <div class="skill-block__title">NLP &amp; RAG</div>
-        <div class="skill-block__list">
-          <span class="tag">LangChain</span><span class="tag">ChromaDB</span><span class="tag">FAISS</span>
-          <span class="tag">RAGAS</span><span class="tag">Groq</span><span class="tag">Gemini</span>
+
+      <div class="cert-card">
+        <button class="cert-card__img-btn" type="button" data-cert="hf-agents">
+          <img src="assets/certs/hf-agents.webp" alt="Agents Course – Foundations of Agents">
+        </button>
+        <div class="cert-card__powered">
+          <span class="cert-card__powered-label">Powered by</span>
+          <span class="cert-card__powered-badge cert-card__powered-badge--hf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 13.5s1.5 2 4 2 4-2 4-2M9 9.5h.01M15 9.5h.01"/></svg>
+            Hugging Face
+          </span>
         </div>
+        <div class="cert-card__title">Agents Course – Foundations of Agents</div>
       </div>
-      <div class="skill-block">
-        <div class="skill-block__title">Full-Stack &amp; SaaS</div>
-        <div class="skill-block__list">
-          <span class="tag">Next.js</span><span class="tag">React</span><span class="tag">FastAPI</span>
-          <span class="tag">PostgreSQL</span><span class="tag">Stripe</span><span class="tag">OAuth</span>
+
+      <div class="cert-card">
+        <button class="cert-card__img-btn" type="button" data-cert="claude-api">
+          <img src="assets/certs/claude-api.png" alt="Building with the Claude API">
+        </button>
+        <div class="cert-card__powered">
+          <span class="cert-card__powered-label">Powered by</span>
+          <span class="cert-card__powered-badge cert-card__powered-badge--claude">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6L12 2Z"/></svg>
+            Claude Academy
+          </span>
         </div>
+        <div class="cert-card__title">Building with the Claude API</div>
       </div>
-      <div class="skill-block">
-        <div class="skill-block__title">MLOps &amp; Outils</div>
-        <div class="skill-block__list">
-          <span class="tag">Docker</span><span class="tag">Git</span><span class="tag">MLflow</span>
-          <span class="tag">CI/CD</span><span class="tag">HuggingFace</span>
+
+      <div class="cert-card">
+        <button class="cert-card__img-btn" type="button" data-cert="vertex-ai">
+          <img src="assets/certs/vertex-ai.png" alt="Claude with Google Cloud's Vertex AI">
+        </button>
+        <div class="cert-card__powered">
+          <span class="cert-card__powered-label">Powered by</span>
+          <span class="cert-card__powered-badge cert-card__powered-badge--claude">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6L12 2Z"/></svg>
+            Claude Academy
+          </span>
         </div>
+        <div class="cert-card__title">Claude with Google Cloud's Vertex AI</div>
+      </div>
+
+      <div class="cert-card">
+        <button class="cert-card__img-btn" type="button" data-cert="fluency-small-business">
+          <img src="assets/certs/fluency-small-business.png" alt="AI Fluency for Small Businesses">
+        </button>
+        <div class="cert-card__powered">
+          <span class="cert-card__powered-label">Powered by</span>
+          <span class="cert-card__powered-badge cert-card__powered-badge--claude">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6L12 2Z"/></svg>
+            Claude Academy
+          </span>
+        </div>
+        <div class="cert-card__title">AI Fluency for Small Businesses</div>
+      </div>
+
+      <div class="cert-card">
+        <button class="cert-card__img-btn" type="button" data-cert="fluency-builders">
+          <img src="assets/certs/fluency-builders.png" alt="AI Fluency for Builders">
+        </button>
+        <div class="cert-card__powered">
+          <span class="cert-card__powered-label">Powered by</span>
+          <span class="cert-card__powered-badge cert-card__powered-badge--claude">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6L12 2Z"/></svg>
+            Claude Academy
+          </span>
+        </div>
+        <div class="cert-card__title">AI Fluency for Builders</div>
+      </div>
+
+      <div class="cert-card">
+        <button class="cert-card__img-btn" type="button" data-cert="ai-capabilities">
+          <img src="assets/certs/ai-capabilities.png" alt="AI Capabilities and Limitations">
+        </button>
+        <div class="cert-card__powered">
+          <span class="cert-card__powered-label">Powered by</span>
+          <span class="cert-card__powered-badge cert-card__powered-badge--claude">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6L12 2Z"/></svg>
+            Claude Academy
+          </span>
+        </div>
+        <div class="cert-card__title">AI Capabilities and Limitations</div>
+      </div>
+
+      <div class="cert-card">
+        <button class="cert-card__img-btn" type="button" data-cert="fluency-nonprofits">
+          <img src="assets/certs/fluency-nonprofits.png" alt="AI Fluency for nonprofits">
+        </button>
+        <div class="cert-card__powered">
+          <span class="cert-card__powered-label">Powered by</span>
+          <span class="cert-card__powered-badge cert-card__powered-badge--claude">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 6v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V6L12 2Z"/></svg>
+            Claude Academy
+          </span>
+        </div>
+        <div class="cert-card__title">AI Fluency for nonprofits</div>
       </div>
     </div>
   </section>
 
-  <!-- ================= CONTACT ================= -->
+  <!-- Certification lightbox -->
+  <div class="cert-lightbox" id="certLightbox" aria-hidden="true">
+    <button class="cert-lightbox__close" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <img class="cert-lightbox__img" id="certLightboxImg" src="" alt="">
+  </div>
+
   <section id="contact">
-    <div class="section__eyebrow">// RESTONS EN CONTACT</div>
-    <h2 class="section__title">Contact</h2>
-
-    <div class="contact__list">
-      <a class="contact__item" href="mailto:Kawther.JGUIRIM@esprim.tn">
+    <div class="contact-hero">
+      <span class="contact-hero__icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
-        <div>
-          <div class="label">EMAIL</div>
-          <div class="value">Kawther.JGUIRIM@esprim.tn</div>
-        </div>
-      </a>
-      <a class="contact__item" href="https://linkedin.com/in/kawthar-jguirim-585355347" target="_blank">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 21v-7a3 3 0 0 1 6 0v7M10 12V9"/></svg>
-        <div>
-          <div class="label">LINKEDIN</div>
-          <div class="value">linkedin.com/in/kawthar-jguirim-585355347</div>
-        </div>
-      </a>
-      <a class="contact__item" href="https://github.com/kawtharjguirim" target="_blank">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
-        <div>
-          <div class="label">GITHUB</div>
-          <div class="value">github.com/kawtharjguirim</div>
-        </div>
-      </a>
+      </span>
+      <div class="contact-hero__status"><span class="contact-hero__dot"></span> Available for new projects</div>
+      <h2 class="contact-hero__title">Let's Stay in <span>Touch</span></h2>
+      <p class="contact-hero__text">
+        Want to talk about a project, a technical need, or just chat about AI? Feel free to
+        <strong>reach out</strong> — I'd love to discuss it and see how we could work together! 🚀
+      </p>
     </div>
 
-    <footer>© 2026 Kawthar Jguirim — construit avec HTML &amp; CSS</footer>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-info__item contact-info__item--static">
+          <span class="contact-info__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </span>
+          <div>
+            <div class="contact-info__label">Address</div>
+            <div class="contact-info__value">Sayada, Abou Zakaria El Hafsi Street</div>
+          </div>
+        </div>
+        <a class="contact-info__item" href="mailto:Kawther.JGUIRIM@esprim.tn">
+          <span class="contact-info__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+          </span>
+          <div>
+            <div class="contact-info__label">Email</div>
+            <div class="contact-info__value">Kawther.JGUIRIM@esprim.tn</div>
+          </div>
+        </a>
+        <a class="contact-info__item" href="tel:+21695552229">
+          <span class="contact-info__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          </span>
+          <div>
+            <div class="contact-info__label">Phone</div>
+            <div class="contact-info__value">+216 95 552 229</div>
+          </div>
+        </a>
+
+        <div class="contact-map">
+          <a class="contact-map__link" href="https://www.google.com/maps/search/?api=1&query=Sayada%2C+rue+Abou+Zakaria+El+Hafsi" target="_blank" rel="noopener">
+            Open in Maps
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+          </a>
+          <iframe
+            src="https://www.google.com/maps?q=Sayada,+rue+Abou+Zakaria+El+Hafsi,+Tunisie&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            title="Location — Sayada, Abou Zakaria El Hafsi Street"></iframe>
+        </div>
+
+        <div class="contact-info__deco">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 4h16v12H7l-3 3V4Z"/></svg>
+          <p>I typically reply within 24–48h — I read every message carefully.</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="contact-form__row">
+          <div class="contact-form__field">
+            <label for="cfName">Your name</label>
+            <input type="text" id="cfName" name="name" required>
+          </div>
+          <div class="contact-form__field">
+            <label for="cfEmail">Your email</label>
+            <input type="email" id="cfEmail" name="email" required>
+          </div>
+        </div>
+        <div class="contact-form__field">
+          <label for="cfSubject">Subject</label>
+          <input type="text" id="cfSubject" name="subject" required>
+        </div>
+        <div class="contact-form__field">
+          <label for="cfMessage">Message</label>
+          <textarea id="cfMessage" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary contact-form__submit">
+          Send message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="contact-form__note" id="contactFormNote">Opens your email client with the message pre-filled.</p>
+      </form>
+    </div>
+
+    <footer>© Copyright Kawthar JGUIRIM All Rights Reserved</footer>
   </section>
 
 </main>
@@ -553,8 +1195,88 @@
 
   sections.forEach(s => observer.observe(s));
 
+  // ---- From Model to Production: interactive pipeline ----
+  const PIPELINE_DATA = [
+    {
+      title: 'Data',
+      tech: ['Python', 'Pandas', 'NumPy'],
+      what: "Collecting and preparing structured and unstructured data — medical MRI scans, documents, and text — as the foundation for every model and retrieval pipeline I build.",
+      example: 'NEURO PREDICT (MRI datasets) · Memo (multimodal documents)'
+    },
+    {
+      title: 'Preprocessing',
+      tech: ['OpenCV', 'PyMuPDF', 'CLIP embeddings'],
+      what: 'Cleaning, transforming, and embedding raw data so it becomes usable input for models and semantic search.',
+      example: 'TumorNet (MRI image preprocessing) · Memo (PyMuPDF extraction + CLIP embeddings)'
+    },
+    {
+      title: 'Machine Learning',
+      tech: ['Scikit-learn', 'Random Forest', 'Gradient Boosting'],
+      what: 'Building baseline predictive models and ensemble methods to validate an approach before investing in deep learning.',
+      example: 'Applied throughout data science coursework and early-stage project prototyping'
+    },
+    {
+      title: 'Deep Learning',
+      tech: ['PyTorch', 'TensorFlow', 'CNN', 'U-Net', 'ResNet', 'EfficientNet'],
+      what: 'Designing and training custom neural networks for medical imaging and vision tasks, from architecture choice to evaluation.',
+      example: 'NEURO PREDICT (ResNet-50 + U-Net, 91.52% accuracy) · TumorNet (EfficientNetB0 + Grad-CAM)'
+    },
+    {
+      title: 'LLM / RAG',
+      tech: ['LangChain', 'ChromaDB', 'FAISS', 'Groq', 'Hugging Face'],
+      what: 'Building retrieval-augmented generation pipelines and multi-agent systems grounded in real, user-owned data.',
+      example: 'Memo (multimodal RAG + CrewAI agents) · WriteMind AI (RAG knowledge base)'
+    },
+    {
+      title: 'API',
+      tech: ['FastAPI', 'REST', 'JWT'],
+      what: 'Exposing models and business logic through documented, authenticated APIs that a real frontend can consume.',
+      example: 'Forge AI · Memo · WriteMind AI — all built on FastAPI backends'
+    },
+    {
+      title: 'Docker',
+      tech: ['Docker', 'docker-compose'],
+      what: 'Containerizing services so they run identically in development and production, with no "works on my machine" surprises.',
+      example: 'Lettro Game · Memo — both containerized end to end'
+    },
+    {
+      title: 'Deployment',
+      tech: ['Git', 'GitHub', 'CI/CD', 'MLflow'],
+      what: 'Shipping applications to real environments and tracking experiments so results stay reproducible over time.',
+      example: 'Version-controlled and experiment-tracked across all active projects'
+    },
+  ];
+
+  const pipelineTrack = document.getElementById('pipelineTrack');
+  const pipelinePanel = document.getElementById('pipelinePanel');
+
+  function renderPipelinePanel(i) {
+    const d = PIPELINE_DATA[i];
+    pipelinePanel.classList.remove('is-in');
+    void pipelinePanel.offsetWidth; // restart animation
+    pipelinePanel.innerHTML = `
+      <div class="pipeline__panel-title">${d.title}</div>
+      <div class="pipeline__panel-tech">${d.tech.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+      <p class="pipeline__panel-what">${d.what}</p>
+      <div class="pipeline__panel-example"><strong>Example:</strong> ${d.example}</div>
+    `;
+    pipelinePanel.classList.add('is-in');
+  }
+
+  if (pipelineTrack && pipelinePanel) {
+    const steps = pipelineTrack.querySelectorAll('.pipeline__step');
+    steps.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        steps.forEach(s => s.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        renderPipelinePanel(Number(btn.dataset.step));
+      });
+    });
+    renderPipelinePanel(0);
+  }
+
   // Machine à écrire : rôles qui défilent
-  const roles = ['IA & Deep Learning', 'NLP & RAG', 'Full-Stack SaaS', 'Data Science'];
+  const roles = ['AI & Deep Learning', 'NLP & RAG', 'Full-Stack SaaS', 'Data Science'];
   const twEl = document.getElementById('typewriter');
   if (twEl) {
     let roleIndex = 0, charIndex = 0, deleting = false;
@@ -618,6 +1340,22 @@
     });
   }
 
+  // Interactive 3D tilt on certification cards
+  if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    document.querySelectorAll('.cert-card').forEach((card) => {
+      card.style.transformStyle = 'preserve-3d';
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = `perspective(900px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateY(-6px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  }
+
   // Repli discret si un logo de la constellation ne charge pas
   document.querySelectorAll('.orbit__logo img').forEach((img) => {
     img.addEventListener('error', () => {
@@ -667,6 +1405,176 @@
       });
     }, { threshold: 0.15 });
     resumeObserver.observe(resumeTimelines);
+  }
+
+  // ---- Portfolio : entrée animée des cartes projet au scroll (effet cascade) ----
+  const projectCards = document.querySelectorAll('.project-grid .project-card');
+  if (projectCards.length) {
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    projectCards.forEach((card, i) => {
+      card.style.setProperty('--card-delay', `${(i % 4) * 0.09}s`);
+      cardObserver.observe(card);
+    });
+  }
+
+  // ---- Contact : construit un mailto: pré-rempli à partir du formulaire (site statique, sans backend) ----
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('cfName').value.trim();
+      const email = document.getElementById('cfEmail').value.trim();
+      const subject = document.getElementById('cfSubject').value.trim();
+      const message = document.getElementById('cfMessage').value.trim();
+      const body = `${message}\n\n— ${name} (${email})`;
+      const mailto = `mailto:Kawther.JGUIRIM@esprim.tn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailto;
+    });
+  }
+
+  // ---- Services : champ d'étoiles généré + entrée en cascade des cartes au scroll ----
+  const servicesStars = document.querySelector('.services__stars');
+  if (servicesStars) {
+    let starsHTML = '';
+    for (let i = 0; i < 44; i++) {
+      const top = Math.random() * 100;
+      const left = Math.random() * 100;
+      const size = (Math.random() * 1.6 + 1).toFixed(1);
+      const delay = (Math.random() * 5).toFixed(2);
+      const duration = (Math.random() * 2.5 + 2.5).toFixed(2);
+      starsHTML += `<span class="services__star" style="top:${top}%; left:${left}%; width:${size}px; height:${size}px; animation-delay:${delay}s; animation-duration:${duration}s;"></span>`;
+    }
+    servicesStars.innerHTML = starsHTML;
+  }
+
+  const serviceCards = document.querySelectorAll('.service-card');
+  if (serviceCards.length) {
+    const serviceObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          serviceObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    serviceCards.forEach((card, i) => {
+      card.style.setProperty('--card-delay', `${(i % 3) * 0.1}s`);
+      serviceObserver.observe(card);
+    });
+  }
+
+  // Tilt 3D léger sur les cartes de service (suit la souris)
+  if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    document.querySelectorAll('.service-card').forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = `perspective(700px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-6px)`;
+      });
+      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    });
+  }
+
+  // ---- Accordéon "View features" sur les cartes projet ----
+  document.querySelectorAll('.project-card__toggle').forEach((btn) => {
+    const label = btn.querySelector('.project-card__toggle-label');
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (label) label.textContent = expanded ? 'View features' : 'Hide features';
+    });
+  });
+
+  // ---- Certifications : entrée en cascade au scroll + lightbox ----
+  const certCards = document.querySelectorAll('.cert-card');
+  if (certCards.length) {
+    const certObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          certObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    certCards.forEach((card, i) => {
+      card.style.setProperty('--card-delay', `${(i % 4) * 0.08}s`);
+      certObserver.observe(card);
+    });
+  }
+
+  const certLightbox = document.getElementById('certLightbox');
+  const certLightboxImg = document.getElementById('certLightboxImg');
+  if (certLightbox && certLightboxImg) {
+    document.querySelectorAll('.cert-card__img-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const img = btn.querySelector('img');
+        certLightboxImg.src = img.src;
+        certLightboxImg.alt = img.alt;
+        certLightbox.classList.add('is-open');
+        certLightbox.setAttribute('aria-hidden', 'false');
+      });
+    });
+    const closeCertLightbox = () => {
+      certLightbox.classList.remove('is-open');
+      certLightbox.setAttribute('aria-hidden', 'true');
+    };
+    certLightbox.querySelector('.cert-lightbox__close').addEventListener('click', closeCertLightbox);
+    certLightbox.addEventListener('click', (e) => { if (e.target === certLightbox) closeCertLightbox(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeCertLightbox(); });
+  }
+
+  // ---- Logos de la constellation cliquables ----
+  document.querySelectorAll('.orbit__node[data-target]').forEach((node) => {
+    node.style.pointerEvents = 'auto';
+    const logo = node.querySelector('.orbit__logo');
+    if (logo) {
+      logo.style.cursor = 'pointer';
+      logo.setAttribute('role', 'link');
+      logo.setAttribute('tabindex', '0');
+      logo.setAttribute('aria-label', 'Aller à ' + (node.dataset.name || ''));
+      const go = () => {
+        const target = document.querySelector(node.dataset.target);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+      logo.addEventListener('click', go);
+      logo.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+    }
+  });
+
+
+  // ---- Traînée de particules dorées au survol de la zone hero ----
+  const heroSection = document.getElementById('home');
+  if (heroSection && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    let lastSparkle = 0;
+    heroSection.addEventListener('mousemove', (e) => {
+      const now = Date.now();
+      if (now - lastSparkle < 90) return;
+      lastSparkle = now;
+      const dot = document.createElement('span');
+      dot.className = 'cursor-sparkle';
+      dot.style.left = e.clientX + 'px';
+      dot.style.top = e.clientY + 'px';
+      document.body.appendChild(dot);
+      setTimeout(() => dot.remove(), 900);
+    });
+  }
+
+  // ---- Parallax subtil du fond selon la position de la souris ----
+  if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+    document.addEventListener('mousemove', (e) => {
+      const mx = (e.clientX / window.innerWidth - 0.5).toFixed(3);
+      const my = (e.clientY / window.innerHeight - 0.5).toFixed(3);
+      document.documentElement.style.setProperty('--mx', mx);
+      document.documentElement.style.setProperty('--my', my);
+    });
   }
 </script>
 
