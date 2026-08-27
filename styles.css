@@ -779,6 +779,8 @@ section {
   .about-me__fact { opacity: 1 !important; animation: none !important; }
 }
 .about-me__fact strong { color: var(--plum); font-weight: 600; }
+.about-me__fact a { color: var(--rose); font-weight: 600; transition: color 0.2s ease; }
+.about-me__fact a:hover { color: var(--rose-bright); text-decoration: underline; }
 .about-me__icon {
   display: flex;
   align-items: center;
