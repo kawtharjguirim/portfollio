@@ -2,7 +2,7 @@
 
 Personal portfolio website of **Kawthar Jguirim**, AI & Data Science Engineer — final-year engineering student at ESPRIT (Tunisia), working across machine learning, deep learning, generative AI (RAG, LLMs), and full-stack development.
 
-🔗 **Live site:** _add your deployed link here (e.g. Vercel / Netlify / GitHub Pages)_
+🔗 **Live site:** _add your deployed link here Netlify / GitHub pages
 
 ![Portfolio preview](assets/preview.png)
 
